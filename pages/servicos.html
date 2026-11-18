@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Serviços | Sua Academia</title>
+  <meta name="description" content="Musculação, personal trainer, treinamento personalizado e acompanhamento individualizado.">
+  <meta name="theme-color" content="#0B0B0B">
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="../js/config.js" defer></script>
+  <script src="../js/data.js" defer></script>
+  <script src="../js/components.js" defer></script>
+  <script src="../js/navigation.js" defer></script>
+  <script src="../js/script.js" defer></script>
+</head>
+
+<body data-page="servicos" data-root="../">
+  <noscript><p class="noscript">Para a melhor experiência, ative o JavaScript no seu navegador.</p></noscript>
+
+  <header class="site-header" data-component="header"></header>
+
+  <main id="conteudo" tabindex="-1">
+
+    <!-- CABEÇALHO DA PÁGINA ============================================== -->
+    <section class="page-hero" aria-labelledby="page-titulo">
+      <span class="page-hero__ring" aria-hidden="true"></span>
+      <div class="container">
+        <div class="page-hero__inner">
+          <nav class="breadcrumb" aria-label="Você está em" data-reveal>
+            <ol>
+              <li><a href="../index.html">Home</a></li>
+              <li aria-current="page">Serviços</li>
+            </ol>
+          </nav>
+          <p class="eyebrow" data-reveal>Serviços</p>
+          <h1 id="page-titulo" data-reveal>Treinamento sob medida para o seu objetivo</h1>
+          <p class="lead page-hero__lead" data-reveal>
+            Da musculação ao atendimento exclusivo com personal trainer: escolha o formato
+            que combina com a sua rotina e conte com acompanhamento em cada etapa.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- LISTA DE SERVIÇOS ================================================ -->
+    <section class="section" aria-labelledby="lista-servicos-titulo">
+      <div class="container">
+        <h2 class="visually-hidden" id="lista-servicos-titulo">Nossos serviços</h2>
+        <div class="grid service-list" data-render="services"></div>
+      </div>
+    </section>
+
+    <!-- COMO ESCOLHER ==================================================== -->
+    <section class="section section--surface" aria-labelledby="escolher-titulo">
+      <div class="container split">
+        <div class="split__media" data-reveal>
+          <div class="media media--landscape" data-image="servicos-destaque"></div>
+        </div>
+        <div class="stack-lg">
+          <div class="stack" data-reveal>
+            <p class="eyebrow">Como escolher</p>
+            <h2 id="escolher-titulo">Não sabe por onde começar?</h2>
+            <p>
+              Cada pessoa tem um ponto de partida diferente. Em uma conversa rápida, nossa equipe
+              entende o seu objetivo e indica o serviço mais adequado para você — sem compromisso.
+            </p>
+          </div>
+          <ul class="check-list check-list--lg" role="list" data-reveal>
+            <li><span data-icon="check"></span><span>Quer autonomia com orientação? <strong>Musculação</strong></span></li>
+            <li><span data-icon="check"></span><span>Quer um plano feito só para você? <strong>Treinamento personalizado</strong></span></li>
+            <li><span data-icon="check"></span><span>Quer atenção exclusiva em cada sessão? <strong>Personal Trainer</strong></span></li>
+          </ul>
+          <div class="btn-group" data-reveal>
+            <a class="btn btn--primary" href="contato.html?assunto=servicos">
+              Falar com a equipe <span data-icon="arrow"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAMADA PARA AÇÃO ================================================ -->
+    <section class="section" aria-labelledby="cta-titulo">
+      <div class="container">
+        <div class="cta-band" data-reveal>
+          <div class="cta-band__content">
+            <p class="eyebrow">Planos</p>
+            <h2 id="cta-titulo">Encontre o plano ideal</h2>
+            <p>Compare as modalidades e veja qual combinação de serviços faz mais sentido para você.</p>
+          </div>
+          <div class="btn-group">
+            <a class="btn btn--primary btn--lg" href="planos.html">Ver planos</a>
+            <a class="btn btn--ghost btn--lg" href="contato.html">Fale conosco</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" data-component="footer"></footer>
+</body>
+</html>

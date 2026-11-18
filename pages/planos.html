@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Planos | Sua Academia</title>
+  <meta name="description" content="Conheça as modalidades e os planos da academia: musculação, acompanhamento individualizado e personal trainer.">
+  <meta name="theme-color" content="#0B0B0B">
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="../js/config.js" defer></script>
+  <script src="../js/data.js" defer></script>
+  <script src="../js/components.js" defer></script>
+  <script src="../js/navigation.js" defer></script>
+  <script src="../js/script.js" defer></script>
+</head>
+
+<body data-page="planos" data-root="../">
+  <noscript><p class="noscript">Para a melhor experiência, ative o JavaScript no seu navegador.</p></noscript>
+
+  <header class="site-header" data-component="header"></header>
+
+  <main id="conteudo" tabindex="-1">
+
+    <!-- CABEÇALHO DA PÁGINA ============================================== -->
+    <section class="page-hero" aria-labelledby="page-titulo">
+      <span class="page-hero__ring" aria-hidden="true"></span>
+      <div class="container">
+        <div class="page-hero__inner">
+          <nav class="breadcrumb" aria-label="Você está em" data-reveal>
+            <ol>
+              <li><a href="../index.html">Home</a></li>
+              <li aria-current="page">Planos</li>
+            </ol>
+          </nav>
+          <p class="eyebrow" data-reveal>Planos</p>
+          <h1 id="page-titulo" data-reveal>Escolha como você quer evoluir</h1>
+          <p class="lead page-hero__lead" data-reveal>
+            Modalidades pensadas para diferentes objetivos e níveis de acompanhamento.
+            Compare os planos e fale com a nossa equipe para escolher o ideal.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLANOS =========================================================== -->
+    <section class="section" aria-labelledby="planos-titulo">
+      <div class="container">
+        <header class="section-header section-header--center" data-reveal>
+          <p class="eyebrow">Modalidades</p>
+          <h2 id="planos-titulo">Planos e modalidades</h2>
+          <p>Todos os planos dão acesso a uma estrutura completa e a uma equipe dedicada à sua evolução.</p>
+        </header>
+
+        <div class="grid plans-grid" data-render="plans"></div>
+
+        <p class="notice" data-reveal>
+          <span data-icon="alert"></span>
+          <span>
+            <strong>Valores e condições a definir.</strong>
+            Os preços, períodos e condições comerciais desta página são temporários e serão
+            atualizados com as informações oficiais da academia.
+          </span>
+        </p>
+      </div>
+    </section>
+
+    <!-- FAQ ============================================================== -->
+    <section class="section section--surface" aria-labelledby="faq-titulo">
+      <div class="container split split--top faq-layout">
+        <header class="section-header sticky-header" data-reveal>
+          <p class="eyebrow">Dúvidas frequentes</p>
+          <h2 id="faq-titulo">Perguntas frequentes</h2>
+          <p>Reunimos as dúvidas mais comuns sobre planos e funcionamento. Não encontrou a sua?</p>
+          <a class="btn btn--ghost" href="contato.html?assunto=planos">
+            Fale com a equipe <span data-icon="arrow"></span>
+          </a>
+        </header>
+        <div class="faq" data-render="faq"></div>
+      </div>
+    </section>
+
+    <!-- CHAMADA PARA AÇÃO ================================================ -->
+    <section class="section" aria-labelledby="cta-titulo">
+      <div class="container">
+        <div class="cta-band" data-reveal>
+          <div class="cta-band__content">
+            <p class="eyebrow">Ainda em dúvida?</p>
+            <h2 id="cta-titulo">Conheça antes de decidir</h2>
+            <p>Agende uma visita, conheça a estrutura e converse com a equipe sobre o plano ideal para você.</p>
+          </div>
+          <div class="btn-group">
+            <a class="btn btn--primary btn--lg" href="contato.html?assunto=visita">Agendar visita</a>
+            <a class="btn btn--ghost btn--lg" href="servicos.html">Ver serviços</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" data-component="footer"></footer>
+</body>
+</html>

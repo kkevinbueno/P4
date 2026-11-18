@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Estrutura | Sua Academia</title>
+  <meta name="description" content="Conheça a área de musculação, os equipamentos, os espaços de treinamento e as instalações da academia.">
+  <meta name="theme-color" content="#0B0B0B">
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="../js/config.js" defer></script>
+  <script src="../js/data.js" defer></script>
+  <script src="../js/components.js" defer></script>
+  <script src="../js/navigation.js" defer></script>
+  <script src="../js/script.js" defer></script>
+</head>
+
+<body data-page="estrutura" data-root="../">
+  <noscript><p class="noscript">Para a melhor experiência, ative o JavaScript no seu navegador.</p></noscript>
+
+  <header class="site-header" data-component="header"></header>
+
+  <main id="conteudo" tabindex="-1">
+
+    <!-- CABEÇALHO DA PÁGINA ============================================== -->
+    <section class="page-hero" aria-labelledby="page-titulo">
+      <span class="page-hero__ring" aria-hidden="true"></span>
+      <div class="container">
+        <div class="page-hero__inner">
+          <nav class="breadcrumb" aria-label="Você está em" data-reveal>
+            <ol>
+              <li><a href="../index.html">Home</a></li>
+              <li aria-current="page">Estrutura</li>
+            </ol>
+          </nav>
+          <p class="eyebrow" data-reveal>Estrutura</p>
+          <h1 id="page-titulo" data-reveal>Um espaço completo para treinar bem</h1>
+          <p class="lead page-hero__lead" data-reveal>
+            Ambientes organizados, equipamentos selecionados e cuidado em cada detalhe para
+            que você tenha tudo o que precisa durante o treino.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- APRESENTAÇÃO DA ESTRUTURA ======================================== -->
+    <section class="section" aria-labelledby="apresentacao-titulo">
+      <div class="container split split--top">
+        <div class="stack" data-reveal>
+          <p class="eyebrow">Nossa estrutura</p>
+          <h2 id="apresentacao-titulo">Cada ambiente com uma função clara</h2>
+          <p>
+            Planejamos a distribuição dos espaços para que o treino aconteça de forma contínua,
+            segura e confortável. Musculação, áreas livres e ambientes de apoio foram pensados
+            para funcionar juntos.
+          </p>
+          <p>
+            <span class="ph-token">[Informações adicionais sobre a estrutura — metragem, capacidade, diferenciais físicos — a serem fornecidas.]</span>
+          </p>
+        </div>
+
+        <nav class="anchor-nav" aria-label="Navegue pela estrutura" data-reveal>
+          <p class="anchor-nav__title">Navegue pela estrutura</p>
+          <ol class="anchor-nav__list">
+            <li><a href="#musculacao"><span>01</span> Área de musculação <span data-icon="arrow"></span></a></li>
+            <li><a href="#equipamentos"><span>02</span> Equipamentos <span data-icon="arrow"></span></a></li>
+            <li><a href="#espacos"><span>03</span> Espaços de treinamento <span data-icon="arrow"></span></a></li>
+            <li><a href="#instalacoes"><span>04</span> Ambientes e instalações <span data-icon="arrow"></span></a></li>
+            <li><a href="#diferenciais"><span>05</span> Diferenciais da estrutura <span data-icon="arrow"></span></a></li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+
+    <!-- ÁREA DE MUSCULAÇÃO =============================================== -->
+    <section class="section section--surface" id="musculacao" aria-labelledby="musculacao-titulo">
+      <div class="container split">
+        <div class="media-stack split__media" data-reveal>
+          <div class="media media--landscape" data-image="estrutura-musculacao"></div>
+          <div class="media-stack__secondary">
+            <div class="media media--square" data-image="estrutura-musculacao-detalhe"></div>
+          </div>
+        </div>
+        <div class="stack-lg">
+          <div class="stack" data-reveal>
+            <p class="eyebrow">Área de musculação</p>
+            <h2 id="musculacao-titulo">O coração da academia</h2>
+            <p>
+              Um salão amplo, com equipamentos organizados por grupo muscular e espaço suficiente
+              para executar cada exercício com amplitude e segurança.
+            </p>
+          </div>
+          <ul class="check-list check-list--lg" role="list" data-reveal>
+            <li><span data-icon="check"></span><span>Equipamentos organizados por grupo muscular</span></li>
+            <li><span data-icon="check"></span><span>Espaço para execução com amplitude</span></li>
+            <li><span data-icon="check"></span><span>Equipe presente para orientação</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EQUIPAMENTOS ===================================================== -->
+    <section class="section" id="equipamentos" aria-labelledby="equipamentos-titulo">
+      <div class="container">
+        <header class="section-header" data-reveal>
+          <p class="eyebrow">Equipamentos</p>
+          <h2 id="equipamentos-titulo">Tudo o que o seu treino exige</h2>
+          <p>Uma seleção de equipamentos que cobre do treino de força ao condicionamento.</p>
+        </header>
+        <div class="grid grid--4" data-render="equipment"></div>
+      </div>
+    </section>
+
+    <!-- ESPAÇOS DE TREINAMENTO =========================================== -->
+    <section class="section section--surface" id="espacos" aria-labelledby="espacos-titulo">
+      <div class="container">
+        <header class="section-header" data-reveal>
+          <p class="eyebrow">Espaços de treinamento</p>
+          <h2 id="espacos-titulo">Áreas pensadas para cada tipo de treino</h2>
+        </header>
+        <div class="bento" data-render="spaces"></div>
+      </div>
+    </section>
+
+    <!-- AMBIENTES E INSTALAÇÕES ========================================== -->
+    <section class="section" id="instalacoes" aria-labelledby="instalacoes-titulo">
+      <div class="container">
+        <header class="section-header" data-reveal>
+          <p class="eyebrow">Ambientes e instalações</p>
+          <h2 id="instalacoes-titulo">Conforto antes, durante e depois</h2>
+          <p>Espaços de apoio que completam a sua experiência na academia.</p>
+        </header>
+        <div class="grid grid--3" data-render="facilities"></div>
+      </div>
+    </section>
+
+    <!-- DIFERENCIAIS DA ESTRUTURA ======================================== -->
+    <section class="section section--surface" id="diferenciais" aria-labelledby="diferenciais-titulo">
+      <div class="container split split--top">
+        <header class="section-header sticky-header" data-reveal>
+          <p class="eyebrow">Diferenciais</p>
+          <h2 id="diferenciais-titulo">Detalhes que fazem diferença</h2>
+          <p>Uma estrutura bem pensada torna o treino mais eficiente, seguro e agradável.</p>
+        </header>
+        <div class="feature-rows" data-render="structure-highlights"></div>
+      </div>
+    </section>
+
+    <!-- CHAMADA PARA AÇÃO ================================================ -->
+    <section class="section" aria-labelledby="cta-titulo">
+      <div class="container">
+        <div class="cta-band" data-reveal>
+          <div class="cta-band__content">
+            <p class="eyebrow">Visite a academia</p>
+            <h2 id="cta-titulo">Venha conhecer pessoalmente</h2>
+            <p>Agende uma visita e veja de perto cada ambiente da nossa estrutura.</p>
+          </div>
+          <div class="btn-group">
+            <a class="btn btn--primary btn--lg" href="contato.html?assunto=visita">Agendar visita</a>
+            <a class="btn btn--ghost btn--lg" href="planos.html">Ver planos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" data-component="footer"></footer>
+</body>
+</html>

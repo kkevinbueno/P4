@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contato | Sua Academia</title>
+  <meta name="description" content="Fale com a academia: endereço, telefone, WhatsApp, Instagram, horários de funcionamento e formulário de contato.">
+  <meta name="theme-color" content="#0B0B0B">
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="../js/config.js" defer></script>
+  <script src="../js/data.js" defer></script>
+  <script src="../js/components.js" defer></script>
+  <script src="../js/navigation.js" defer></script>
+  <script src="../js/script.js" defer></script>
+</head>
+
+<body data-page="contato" data-root="../">
+  <noscript><p class="noscript">Para a melhor experiência, ative o JavaScript no seu navegador.</p></noscript>
+
+  <header class="site-header" data-component="header"></header>
+
+  <main id="conteudo" tabindex="-1">
+
+    <!-- CABEÇALHO DA PÁGINA ============================================== -->
+    <section class="page-hero" aria-labelledby="page-titulo">
+      <span class="page-hero__ring" aria-hidden="true"></span>
+      <div class="container">
+        <div class="page-hero__inner">
+          <nav class="breadcrumb" aria-label="Você está em" data-reveal>
+            <ol>
+              <li><a href="../index.html">Home</a></li>
+              <li aria-current="page">Contato</li>
+            </ol>
+          </nav>
+          <p class="eyebrow" data-reveal>Contato</p>
+          <h1 id="page-titulo" data-reveal>Vamos conversar sobre o seu treino</h1>
+          <p class="lead page-hero__lead" data-reveal>
+            Tire dúvidas, agende uma visita ou peça informações sobre planos e serviços.
+            Escolha o canal que preferir.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CANAIS + FORMULÁRIO ============================================== -->
+    <section class="section" aria-label="Informações de contato e formulário">
+      <div class="container contact-layout">
+
+        <!-- Informações de contato -->
+        <div class="contact-info">
+          <header class="section-header" data-reveal>
+            <p class="eyebrow">Canais de atendimento</p>
+            <h2>Informações de contato</h2>
+          </header>
+
+          <div class="contact-info__list" data-render="contact-info"></div>
+
+          <div class="info-card info-card--block" data-reveal>
+            <span class="icon-circle"><span data-icon="clock"></span></span>
+            <div>
+              <span class="info-card__label">Horários de funcionamento</span>
+              <div data-render="hours"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulário -->
+        <div class="form-card" data-reveal>
+          <div class="form-card__header">
+            <p class="eyebrow">Formulário</p>
+            <h2 id="form-titulo">Envie uma mensagem</h2>
+            <p>Preencha os campos abaixo e nossa equipe retornará o contato.</p>
+          </div>
+
+          <!-- Preparado para integração futura: App.FormService.submitContact (js/data.js) -->
+          <form class="form" id="form-contato" aria-labelledby="form-titulo" novalidate>
+            <div class="field">
+              <label class="field__label" for="nome">Nome <abbr title="obrigatório">*</abbr></label>
+              <input class="field__control" id="nome" name="nome" type="text" autocomplete="name"
+                     placeholder="Seu nome completo" required minlength="3" maxlength="80"
+                     aria-describedby="nome-erro">
+              <p class="field__error" id="nome-erro" aria-live="polite"></p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="email">E-mail <abbr title="obrigatório">*</abbr></label>
+              <input class="field__control" id="email" name="email" type="email" autocomplete="email"
+                     placeholder="nome@email.com" required maxlength="120"
+                     aria-describedby="email-erro">
+              <p class="field__error" id="email-erro" aria-live="polite"></p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="telefone">Telefone / WhatsApp <abbr title="obrigatório">*</abbr></label>
+              <input class="field__control" id="telefone" name="telefone" type="tel" inputmode="numeric"
+                     autocomplete="tel-national" placeholder="(00) 00000-0000" required maxlength="15"
+                     aria-describedby="telefone-dica telefone-erro">
+              <p class="field__hint" id="telefone-dica">Informe o número com DDD.</p>
+              <p class="field__error" id="telefone-erro" aria-live="polite"></p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="assunto">Assunto <abbr title="obrigatório">*</abbr></label>
+              <select class="field__control" id="assunto" name="assunto" required
+                      aria-describedby="assunto-erro" data-render="contact-subjects">
+                <option value="">Selecione um assunto</option>
+              </select>
+              <p class="field__error" id="assunto-erro" aria-live="polite"></p>
+            </div>
+
+            <div class="field field--full">
+              <label class="field__label" for="mensagem">Mensagem <abbr title="obrigatório">*</abbr></label>
+              <textarea class="field__control" id="mensagem" name="mensagem" rows="5" required
+                        minlength="10" maxlength="1000" placeholder="Como podemos ajudar?"
+                        aria-describedby="mensagem-contador mensagem-erro"></textarea>
+              <p class="field__hint" id="mensagem-contador">0/1000 caracteres</p>
+              <p class="field__error" id="mensagem-erro" aria-live="polite"></p>
+            </div>
+
+            <div class="alert" id="form-status" role="status" tabindex="-1" hidden></div>
+
+            <div class="form__footer">
+              <p class="form__note">* Campos obrigatórios.</p>
+              <button class="btn btn--primary btn--lg" type="submit">
+                Enviar mensagem <span data-icon="arrow"></span>
+              </button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- MAPA ============================================================= -->
+    <section class="section section--tight section--surface" aria-labelledby="mapa-titulo">
+      <div class="container">
+        <header class="section-header" data-reveal>
+          <p class="eyebrow">Localização</p>
+          <h2 id="mapa-titulo">Como chegar</h2>
+        </header>
+        <div class="map" data-render="map" data-reveal></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" data-component="footer"></footer>
+</body>
+</html>

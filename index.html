@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sua Academia | Musculação e Treinamento Personalizado</title>
+  <meta name="description" content="Musculação, personal trainer e treinamento personalizado com acompanhamento próximo, método e estrutura completa.">
+  <meta name="theme-color" content="#0B0B0B">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="js/config.js" defer></script>
+  <script src="js/data.js" defer></script>
+  <script src="js/components.js" defer></script>
+  <script src="js/navigation.js" defer></script>
+  <script src="js/script.js" defer></script>
+</head>
+
+<body data-page="home" data-root="./">
+  <noscript><p class="noscript">Para a melhor experiência, ative o JavaScript no seu navegador.</p></noscript>
+
+  <header class="site-header" data-component="header"></header>
+
+  <main id="conteudo" tabindex="-1">
+
+    <!-- HERO ============================================================ -->
+    <section class="hero" aria-labelledby="hero-titulo">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="eyebrow" data-reveal>Musculação &amp; treinamento personalizado</p>
+
+          <h1 class="hero__title" id="hero-titulo" data-reveal>
+            <span>Treine com</span>
+            <span>propósito.</span>
+            <span class="text-accent">Evolua com método.</span>
+          </h1>
+
+          <p class="hero__subtitle lead" data-reveal>
+            Um espaço exclusivo para quem leva o treino a sério: acompanhamento próximo,
+            planejamento individual e uma estrutura pensada para cada etapa da sua evolução.
+          </p>
+
+          <div class="btn-group hero__actions" data-reveal>
+            <a class="btn btn--primary btn--lg" href="pages/planos.html">
+              Conheça os planos
+              <span data-icon="arrow"></span>
+            </a>
+            <a class="btn btn--ghost btn--lg" href="pages/sobre.html">Conheça a academia</a>
+          </div>
+
+          <ul class="hero__highlights" role="list" data-reveal>
+            <li class="hero__highlight">
+              <span data-icon="users"></span>
+              <strong>Acompanhamento</strong>
+              <span>Orientação próxima em cada treino</span>
+            </li>
+            <li class="hero__highlight">
+              <span data-icon="target"></span>
+              <strong>Método</strong>
+              <span>Planejamento a partir do seu objetivo</span>
+            </li>
+            <li class="hero__highlight">
+              <span data-icon="dumbbell"></span>
+              <strong>Estrutura</strong>
+              <span>Equipamentos e ambientes selecionados</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero__visual" data-reveal>
+          <span class="hero__ring" aria-hidden="true"></span>
+          <div class="media media--portrait" data-image="home-hero" data-eager></div>
+          <div class="hero__card">
+            <span class="icon-circle">
+              <span data-icon="activity"></span>
+            </span>
+            <div>
+              <strong>Evolução acompanhada</strong>
+              <span>Do primeiro treino às próximas metas.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- APRESENTAÇÃO ===================================================== -->
+    <section class="section section--surface" aria-labelledby="apresentacao-titulo">
+      <div class="container split">
+        <div class="media-stack split__media" data-reveal>
+          <div class="media media--tall" data-image="home-about"></div>
+          <div class="media-stack__secondary">
+            <div class="media media--square" data-image="home-about-detail"></div>
+          </div>
+          <span class="media-stack__dot" aria-hidden="true"></span>
+        </div>
+
+        <div class="stack-lg">
+          <div class="stack" data-reveal>
+            <p class="eyebrow">A academia</p>
+            <h2 id="apresentacao-titulo">Um espaço pensado para quem quer resultado de verdade</h2>
+          </div>
+          <div class="stack" data-reveal>
+            <p>
+              Mais do que um lugar para treinar, somos um ambiente construído em torno do aluno.
+              Cada treino começa por entender o seu objetivo, a sua rotina e o seu momento — e segue
+              com acompanhamento de perto para que a evolução seja consistente.
+            </p>
+            <p>
+              Unimos uma estrutura completa de musculação a profissionais dedicados, em uma
+              atmosfera reservada, organizada e focada no que importa: o seu treino.
+            </p>
+          </div>
+          <ul class="check-list check-list--lg" role="list" data-reveal>
+            <li><span data-icon="check"></span><span>Atendimento individual e atencioso</span></li>
+            <li><span data-icon="check"></span><span>Treinos planejados a partir de avaliação</span></li>
+            <li><span data-icon="check"></span><span>Ambiente organizado, limpo e reservado</span></li>
+          </ul>
+          <a class="link-arrow" href="pages/sobre.html" data-reveal>
+            Conheça a nossa história
+            <span data-icon="arrow"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIFERENCIAIS ===================================================== -->
+    <section class="section" aria-labelledby="diferenciais-titulo">
+      <div class="container">
+        <header class="section-header" data-reveal>
+          <p class="eyebrow">Diferenciais</p>
+          <h2 id="diferenciais-titulo">Qualidade em cada detalhe do seu treino</h2>
+          <p>Combinamos acompanhamento, método e estrutura para entregar uma experiência de treino à altura dos seus objetivos.</p>
+        </header>
+
+        <div class="grid grid--4" data-render="differentials"></div>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS EM DESTAQUE ============================================= -->
+    <section class="section section--surface" aria-labelledby="servicos-titulo">
+      <div class="container">
+        <header class="section-header section-header--row" data-reveal>
+          <div class="section-header__text">
+            <p class="eyebrow">Serviços</p>
+            <h2 id="servicos-titulo">Escolha a forma ideal de treinar</h2>
+          </div>
+          <a class="btn btn--ghost" href="pages/servicos.html">
+            Ver todos os serviços
+            <span data-icon="arrow"></span>
+          </a>
+        </header>
+
+        <div class="grid grid--3" data-render="services-featured"></div>
+      </div>
+    </section>
+
+    <!-- CHAMADA PARA AÇÃO ================================================ -->
+    <section class="section" aria-labelledby="cta-titulo">
+      <div class="container">
+        <div class="cta-band" data-reveal>
+          <div class="cta-band__content">
+            <p class="eyebrow">Comece agora</p>
+            <h2 id="cta-titulo">Pronto para dar o próximo passo?</h2>
+            <p>Conheça os planos e escolha o formato de treino que combina com você — ou fale com a nossa equipe e agende uma visita.</p>
+          </div>
+          <div class="btn-group">
+            <a class="btn btn--primary btn--lg" href="pages/planos.html">Ver planos</a>
+            <a class="btn btn--ghost btn--lg" href="pages/contato.html">Fale conosco</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" data-component="footer"></footer>
+</body>
+</html>
