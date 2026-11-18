@@ -19,21 +19,32 @@
     /* CONTATO -------------------------------------------------------------- */
     contact: {
       address: {
-        line1: "[Rua, número — Bairro]",
-        line2: "[Cidade — UF · CEP 00000-000]",
-        mapsUrl: null, // link "Como chegar" (Google Maps)
+        line1: "R. 7 de Setembro, 510",
+        line2: "Parque Ortolândia — Hortolândia/SP · CEP 13184-000",
+        mapsUrl: "https://maps.app.goo.gl/DuijBAA34ESSAoxH8",
       },
-      phone: { display: "[(00) 0000-0000]", number: null }, // ex.: "+550000000000"
-      whatsapp: { display: "[(00) 00000-0000]", number: null }, // ex.: "5500000000000"
-      email: { display: "[e-mail da academia]", address: null },
-      instagram: { display: "[@perfil da academia]", url: null },
-    },
+      phone: {
+        display: "(19) 97110-3730",
+        number: "+5519971103730",
+      },
+      whatsapp: {
+        display: "(19) 97110-3730",
+        number: "5519971103730",
+      },
+      email: {
+        display: "[e-mail da academia]",
+        address: null,
+      },
+  instagram: {
+      display: "@p4academia",
+      url: "https://www.instagram.com/p4academia/",
+  },
+},
 
     /* HORÁRIOS ------------------------------------------------------------- */
     hours: [
-      { days: "Segunda a sexta", time: "[00h às 00h]" },
-      { days: "Sábados", time: "[00h às 00h]" },
-      { days: "Domingos e feriados", time: "[A definir]" },
+    { days: "Segunda a sexta", time: "06h às 21h" },
+    { days: "Sábado e domingo", time: "Fechado" },
     ],
 
     /* DIFERENCIAIS (Home) -------------------------------------------------- */
