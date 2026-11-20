@@ -45,6 +45,7 @@
     hours: [
     { days: "Segunda a sexta", time: "06h às 21h" },
     { days: "Sábado e domingo", time: "Fechado" },
+    { days: "Feriados", time: "Fechado" },
     ],
 
     /* DIFERENCIAIS (Home) -------------------------------------------------- */
